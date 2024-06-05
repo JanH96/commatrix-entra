@@ -24,7 +24,7 @@ var app = express();
  * familiarize yourself with available options. Visit: https://www.npmjs.com/package/express-session
  */
  app.use(session({
-    secret: process.env.EXPRESS_SESSION_SECRET,
+    secret: process.env.CLIENT_SECRET,
     resave: false,
     saveUninitialized: false,
     cookie: {
